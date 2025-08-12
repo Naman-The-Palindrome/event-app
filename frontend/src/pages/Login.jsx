@@ -11,8 +11,8 @@ function Login() {
     try {
       const endpoint =
         mode === "login"
-          ? "https://event-app-backend-ydrb.onrender.com/api/auth/login"
-          : "https://event-app-backend-ydrb.onrender.com/api/auth/register";
+          ? " https://event-app-backend-server.onrender.com/api/auth/login"
+          : " https://event-app-backend-server.onrender.com/api/auth/register";
 
       const res = await fetch(endpoint, {
         method: "POST",

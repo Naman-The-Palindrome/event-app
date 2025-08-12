@@ -52,7 +52,7 @@ function CreateEvent() {
         capacity: formData.capacity,
       };
 
-      const res = await fetch("https://event-app-backend-ydrb.onrender.com/api/events", {
+      const res = await fetch(" https://event-app-backend-server.onrender.com/api/events", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

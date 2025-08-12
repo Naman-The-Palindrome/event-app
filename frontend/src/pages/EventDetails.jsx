@@ -16,7 +16,7 @@ function EventDetails() {
   useEffect(() => {
     const fetchEvent = async () => {
       try {
-        const res = await fetch(`https://event-app-backend-ydrb.onrender.com/api/events/${id}`);
+        const res = await fetch(` https://event-app-backend-server.onrender.com/api/events/${id}`);
         if (!res.ok) throw new Error('Failed to fetch event');
         const data = await res.json();
         setEvent(data);
@@ -49,7 +49,7 @@ function EventDetails() {
         navigate('/login');
         return;
       }
-      const res = await fetch(`https://event-app-backend-ydrb.onrender.com/api/events/rsvp/${id}`, {
+      const res = await fetch(` https://event-app-backend-server.onrender.com/api/events/rsvp/${id}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
