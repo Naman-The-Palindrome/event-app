@@ -7,7 +7,7 @@ function MyEvents() {
     try {
       const token = localStorage.getItem("token");
       if (!token) return;
-      const res = await fetch("http://localhost:5000/api/events/mine", {
+      const res = await fetch("https://event-app-backend-ydrb.onrender.com/api/events/mine", {
         headers: { Authorization: `Bearer ${token}` },
       });
       const data = await res.json();
